@@ -63,7 +63,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		76128DDA29F1C4AC002B7861 /* CarsArmando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsArmando.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76128DDA29F1C4AC002B7861 /* RickAndMorty-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RickAndMorty-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76128DDD29F1C4AC002B7861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76128DE129F1C4AC002B7861 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		76128DE629F1C4AD002B7861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		76128DD129F1C4AC002B7861 = {
 			isa = PBXGroup;
 			children = (
-				76128DDC29F1C4AC002B7861 /* CarsArmando */,
+				76128DDC29F1C4AC002B7861 /* RickAndMorty-MVVM */,
 				76128DDB29F1C4AC002B7861 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,12 +142,12 @@
 		76128DDB29F1C4AC002B7861 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76128DDA29F1C4AC002B7861 /* CarsArmando.app */,
+				76128DDA29F1C4AC002B7861 /* RickAndMorty-MVVM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		76128DDC29F1C4AC002B7861 /* CarsArmando */ = {
+		76128DDC29F1C4AC002B7861 /* RickAndMorty-MVVM */ = {
 			isa = PBXGroup;
 			children = (
 				76128DF129F2FE37002B7861 /* Presentation */,
@@ -156,7 +156,7 @@
 				76128E2529F859E5002B7861 /* RickAndMortyRepositoryImpl.swift */,
 				76128DEB29F1C4AD002B7861 /* Info.plist */,
 			);
-			path = CarsArmando;
+			path = "RickAndMorty-MVVM";
 			sourceTree = "<group>";
 		};
 		76128DF129F2FE37002B7861 /* Presentation */ = {
@@ -409,9 +409,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		76128DD929F1C4AC002B7861 /* CarsArmando */ = {
+		76128DD929F1C4AC002B7861 /* RickAndMorty-MVVM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76128DEE29F1C4AD002B7861 /* Build configuration list for PBXNativeTarget "CarsArmando" */;
+			buildConfigurationList = 76128DEE29F1C4AD002B7861 /* Build configuration list for PBXNativeTarget "RickAndMorty-MVVM" */;
 			buildPhases = (
 				76128DD629F1C4AC002B7861 /* Sources */,
 				76128DD729F1C4AC002B7861 /* Frameworks */,
@@ -421,13 +421,13 @@
 			);
 			dependencies = (
 			);
-			name = CarsArmando;
+			name = "RickAndMorty-MVVM";
 			packageProductDependencies = (
 				76128E3029F85B7D002B7861 /* Alamofire */,
 				76128E3429F86C31002B7861 /* Resolver */,
 			);
 			productName = CarsArmando;
-			productReference = 76128DDA29F1C4AC002B7861 /* CarsArmando.app */;
+			productReference = 76128DDA29F1C4AC002B7861 /* RickAndMorty-MVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -445,7 +445,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 76128DD529F1C4AC002B7861 /* Build configuration list for PBXProject "CarsArmando" */;
+			buildConfigurationList = 76128DD529F1C4AC002B7861 /* Build configuration list for PBXProject "RickAndMorty-MVVM" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -462,7 +462,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				76128DD929F1C4AC002B7861 /* CarsArmando */,
+				76128DD929F1C4AC002B7861 /* RickAndMorty-MVVM */,
 			);
 		};
 /* End PBXProject section */
@@ -673,7 +673,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UJSRV9HAGZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CarsArmando/Info.plist;
+				INFOPLIST_FILE = "RickAndMorty-MVVM/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -700,7 +700,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UJSRV9HAGZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CarsArmando/Info.plist;
+				INFOPLIST_FILE = "RickAndMorty-MVVM/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -721,7 +721,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		76128DD529F1C4AC002B7861 /* Build configuration list for PBXProject "CarsArmando" */ = {
+		76128DD529F1C4AC002B7861 /* Build configuration list for PBXProject "RickAndMorty-MVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76128DEC29F1C4AD002B7861 /* Debug */,
@@ -730,7 +730,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76128DEE29F1C4AD002B7861 /* Build configuration list for PBXNativeTarget "CarsArmando" */ = {
+		76128DEE29F1C4AD002B7861 /* Build configuration list for PBXNativeTarget "RickAndMorty-MVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76128DEF29F1C4AD002B7861 /* Debug */,

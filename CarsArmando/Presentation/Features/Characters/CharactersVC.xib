@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharactersVC" customModule="CarsArmando" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="mTO-zC-W3R" id="eFY-HA-i6d"/>
+                <outlet property="charactersCollectionView" destination="Fh2-Ag-jSF" id="DW7-Kg-i2T"/>
+                <outlet property="emptyState" destination="5VI-QD-UEa" id="lCi-lE-iPM"/>
+                <outlet property="emptyStateImage" destination="ycz-vJ-no5" id="3bw-I1-xWT"/>
+                <outlet property="emptyStateText" destination="bVu-H0-0Qa" id="RRu-Gb-NrD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="VD6-k0-6fu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Fh2-Ag-jSF" userLabel="CharactersCollectionView" customClass="CharactersCollectionView" customModule="CarsArmando" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fQC-Un-uS9">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="mTO-zC-W3R">
+                    <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                </activityIndicatorView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5VI-QD-UEa">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoM-fU-XTA">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVu-H0-0Qa" userLabel="ErrorText">
+                                    <rect key="frame" x="16" y="579.66666666666663" width="361" height="20.333333333333371"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Error2" translatesAutoresizingMaskIntoConstraints="NO" id="ycz-vJ-no5">
+                                    <rect key="frame" x="24" y="195.66666666666663" width="345" height="368"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="368" id="vB7-lA-DzN"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="bVu-H0-0Qa" firstAttribute="top" secondItem="ycz-vJ-no5" secondAttribute="bottom" constant="16" id="2Ze-6O-Dtm"/>
+                                <constraint firstItem="bVu-H0-0Qa" firstAttribute="leading" secondItem="ZoM-fU-XTA" secondAttribute="leading" constant="16" id="MPW-2i-TOl"/>
+                                <constraint firstItem="ycz-vJ-no5" firstAttribute="centerX" secondItem="ZoM-fU-XTA" secondAttribute="centerX" id="bZK-9g-4g6"/>
+                                <constraint firstAttribute="trailing" secondItem="bVu-H0-0Qa" secondAttribute="trailing" constant="16" id="fQh-Rq-q2r"/>
+                                <constraint firstItem="ycz-vJ-no5" firstAttribute="centerY" secondItem="ZoM-fU-XTA" secondAttribute="centerY" id="qPI-AQ-NFv"/>
+                                <constraint firstItem="ycz-vJ-no5" firstAttribute="leading" secondItem="ZoM-fU-XTA" secondAttribute="leading" constant="24" id="ufg-Ec-QcA"/>
+                                <constraint firstAttribute="trailing" secondItem="ycz-vJ-no5" secondAttribute="trailing" constant="24" id="ynd-x8-7c4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ZoM-fU-XTA" firstAttribute="trailing" secondItem="Wlg-Vo-G9P" secondAttribute="trailing" id="1mK-Yt-zPn"/>
+                        <constraint firstItem="ZoM-fU-XTA" firstAttribute="leading" secondItem="sX8-j5-glm" secondAttribute="leading" id="A2o-Sj-wSJ"/>
+                        <constraint firstItem="ZoM-fU-XTA" firstAttribute="top" secondItem="sX8-j5-glm" secondAttribute="top" id="GsI-dG-GKn"/>
+                        <constraint firstItem="ZoM-fU-XTA" firstAttribute="top" secondItem="Wlg-Vo-G9P" secondAttribute="top" id="Hyh-JH-AAM"/>
+                        <constraint firstItem="ZoM-fU-XTA" firstAttribute="bottom" secondItem="Wlg-Vo-G9P" secondAttribute="bottom" id="Yyl-v2-TQv"/>
+                        <constraint firstItem="sX8-j5-glm" firstAttribute="trailing" secondItem="ZoM-fU-XTA" secondAttribute="trailing" id="ZzC-ZE-ftZ"/>
+                        <constraint firstItem="sX8-j5-glm" firstAttribute="bottom" secondItem="ZoM-fU-XTA" secondAttribute="bottom" id="d0r-Nd-M4o"/>
+                        <constraint firstItem="ZoM-fU-XTA" firstAttribute="leading" secondItem="Wlg-Vo-G9P" secondAttribute="leading" id="ue9-IF-kuy"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Wlg-Vo-G9P"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="sX8-j5-glm"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mTO-zC-W3R" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0bf-nj-S5k"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5VI-QD-UEa" secondAttribute="bottom" id="I7x-aL-cJz"/>
+                <constraint firstItem="5VI-QD-UEa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="M5R-vF-bGz"/>
+                <constraint firstItem="Fh2-Ag-jSF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XML-KH-T3p"/>
+                <constraint firstItem="mTO-zC-W3R" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YVp-l7-PGl"/>
+                <constraint firstItem="Fh2-Ag-jSF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gm2-nn-y3U"/>
+                <constraint firstItem="5VI-QD-UEa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lpT-AA-9iw"/>
+                <constraint firstAttribute="bottom" secondItem="Fh2-Ag-jSF" secondAttribute="bottom" id="pXk-rF-Jnq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Fh2-Ag-jSF" secondAttribute="trailing" id="woa-vN-8LE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5VI-QD-UEa" secondAttribute="trailing" id="yVk-oZ-a6Q"/>
+            </constraints>
+            <point key="canvasLocation" x="87.786259541984734" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Error2" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

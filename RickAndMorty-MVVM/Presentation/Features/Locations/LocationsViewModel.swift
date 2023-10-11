@@ -7,26 +7,25 @@
 
 import Foundation
 import Resolver
+import Combine
 
 public class LocationsViewModel {
     @Injected var locationsRepository : LocationsRepository
-    
-    init() {}
-    
-    let locationsUiState = Box<[LocationsModelPresentation]>([])
-    
-    let loadingUiState = Box<Bool>(false)
+
+    var locationList = PassthroughSubject <[LocationsModelPresentation], Error>()
+    var loading = PassthroughSubject <Bool, Error>()
 
     func getLocations() {
-        loadingUiState.value = true
-        locationsRepository.getLocations() { result in
-            self.loadingUiState.value = false
-            switch result {
-            case.success(let locations):
-                let locationsPresentation = locations.map { domainLocations in domainLocations.toPresentation() }
-                self.locationsUiState.value = locationsPresentation
-            case .failure(_):
-                self.locationsUiState.value = []
+        self.loading.send(true)
+        DispatchQueue.main.asyncAfter(deadline: .now()+2) {
+            self.locationsRepository.getLocations() { result in
+                switch result {
+                case.success(let locations):
+                    self.locationList.send(locations.map { $0.toPresentation() })
+                case .failure(_):
+                    self.locationList.send([])
+                }
+                self.loading.send(false)
             }
         }
     }
